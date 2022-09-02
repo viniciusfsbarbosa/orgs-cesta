@@ -1,21 +1,21 @@
-import React from 'react';
-import { StatusBar, SafeAreaView, View } from 'react-native';
-import { 
-  useFonts, 
-  Montserrat_400Regular, 
+import React from "react";
+import { StatusBar, SafeAreaView, View } from "react-native";
+import {
+  useFonts,
+  Montserrat_400Regular,
   Montserrat_700Bold,
-} from '@expo-google-fonts/montserrat';
+} from "@expo-google-fonts/montserrat";
 
-import Cesta from './src/pages/Cesta';
+import Cesta from "./src/pages/Cesta";
 
 export default function App() {
   const [fonteCarregada] = useFonts({
-    "MontserratRegular": Montserrat_400Regular,
-    "MontserratBold": Montserrat_700Bold,
+    MontserratRegular: Montserrat_400Regular,
+    MontserratBold: Montserrat_700Bold,
   });
 
   if (!fonteCarregada) {
-    return <View />
+    return <View />;
   }
 
   return (
