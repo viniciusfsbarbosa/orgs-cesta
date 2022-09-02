@@ -6,7 +6,7 @@ import logo from '../../assets/logo.png'
 
 const width = Dimensions.get('screen').width;
 
-export default function Cesta (){
+export default function Cesta(){
     return <>
         <Image source={topo} style={styles.topo} />
         <Text style={styles.title}>Detalhes da Cesta</Text> 
@@ -30,7 +30,7 @@ export default function Cesta (){
 const styles = StyleSheet.create({
     topo: {
         width: "100%",
-        height: 578 / 768 * wiorgs
+        height: 578 / 768 * width
     
     },
     title: {
